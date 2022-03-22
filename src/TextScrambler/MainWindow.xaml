@@ -14,7 +14,7 @@
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
         <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="15">
-            <Label>Skip at Left</Label>
+            <Label>Skip from left</Label>
             <xctk:UShortUpDown x:Name="SkipLeftUpDown" Width="50" Value="0" />
         </StackPanel>
         <Grid Grid.Row="1">
@@ -25,7 +25,7 @@
             </Grid.ColumnDefinitions>
             <TextBox x:Name="SourceTextBox" Grid.Column="0" AcceptsReturn="True"></TextBox>
             <Button Grid.Column="1" Click="ScramblerButton_Click">&gt;&gt;</Button>
-            <TextBox x:Name="TargetTextBox" Grid.Column="2" AcceptsReturn="True"></TextBox>
+            <TextBox x:Name="TargetTextBox" Grid.Column="2" IsReadOnly="True" IsReadOnlyCaretVisible="True"></TextBox>
         </Grid>
         <Grid Grid.Row="2" HorizontalAlignment="Right">
             <Label Margin="15">Autor: https://malexandersalazar.github.io, Moisés Alexander Salazar Vila, 2022-03-22</Label>
